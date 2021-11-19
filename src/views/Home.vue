@@ -69,7 +69,7 @@ export default {
     });
     let comicRamdom = Math.floor(Math.random() * 100);
     let response = await axiosInstance.get(
-      `https://admiring-johnson-dc0784.netlify.app/api/comic?num=${comicRamdom}`
+      `https://localhost:8082/api/comic?num=${comicRamdom}`
     );
     this.comic = await response.data;
     this.overlay = false;
