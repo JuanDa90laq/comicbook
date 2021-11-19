@@ -69,7 +69,7 @@ export default {
     });
     let comicRamdom = Math.floor(Math.random() * 100);
     let response = await axiosInstance.get(
-      `https://localhost:8082/api/comic?num=${comicRamdom}`
+      `https://getxkcd.vercel.app/api/comic?num=${comicRamdom}`
     );
     this.comic = await response.data;
     this.overlay = false;
