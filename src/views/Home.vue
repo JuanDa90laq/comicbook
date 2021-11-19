@@ -39,7 +39,6 @@
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
 import ComicImage from "@/components/ComicImage";
 import axios from "axios";
 
@@ -47,7 +46,6 @@ export default {
   name: "Home",
 
   components: {
-    HelloWorld,
     ComicImage,
   },
   data() {
